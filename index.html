@@ -1,1 +1,63 @@
-rtyrtyrty
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>w68344</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+        .error{
+            color: red;
+ 
+        }
+    </style>
+ 
+
+</head>
+<body>
+
+<button id="button1" onclick="changeButtonBackground('button1')"> Button 1 </button>
+<button id="button2" onclick="changeButtonBackground('button2')"> Button 2 </button>
+<button id="button3" onclick="changeButtonBackground('button3')"> Button 3 </button>
+
+
+<form class="form" name="form" method="post" id="dok1" novalidate>
+    <div class="control">
+        <label>Login</label>
+        <input type="text" name="name">
+        <span class="error"></span>
+    </div>
+   
+    <div class="control">
+        <label>Email: </label>
+        <input type="text" name="email">
+        <span class="error"></span>
+    </div>
+    <div class="control">
+        <label>Hasło: </label>
+        <input type="password" name="password">
+        <span class="error"></span>
+    </div>
+    <div class="control">
+        <label>Potwórz Hasło: </label>
+        <input type="password" name="confirm-password">
+        <span class="error"></span>
+    </div>
+    <div class="control actions">
+        <input type="submit" value="Zapisz">
+    </div>
+
+
+</form>
+<script src="skript.js"></script>
+</body>
+</html>
