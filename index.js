@@ -62,10 +62,7 @@ function setCustomValidity(message, name_element) {
     isSuccessful = false;
 }
  
-function spanError(nameOfElement, message){
-    let element = document.querySelector("[name=" + nameOfElement +"] + span.error");
-    element.innerHTML = message;
-}
+
  
 function isEmailAddress(text){
     if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(text)) return true;
